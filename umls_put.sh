@@ -1,0 +1,6 @@
+snow sql -q "PUT 'file:///Users/aaron.white/Snowflake/umls/MRDEF.RRF' @IOP_10005270.HEALTHCARE.UMLS_STAGE AUTO_COMPRESS=TRUE;"
+snow sql -q "PUT 'file:///Users/aaron.white/Snowflake/umls/MRDOC.RRF' @IOP_10005270.HEALTHCARE.UMLS_STAGE AUTO_COMPRESS=TRUE;"
+snow sql -q "PUT 'file:///Users/aaron.white/Snowflake/umls/MRHIER.RRF' @IOP_10005270.HEALTHCARE.UMLS_STAGE AUTO_COMPRESS=TRUE;"
+snow sql -q "PUT 'file:///Users/aaron.white/Snowflake/umls/MRRANK.RRF' @IOP_10005270.HEALTHCARE.UMLS_STAGE AUTO_COMPRESS=TRUE;"
+snow sql -q "PUT 'file:///Users/aaron.white/Snowflake/umls/MRSAB.RRF' @IOP_10005270.HEALTHCARE.UMLS_STAGE AUTO_COMPRESS=TRUE;"
+snow sql -q "PUT 'file:///Users/aaron.white/Snowflake/umls/MRSTY.RRF' @IOP_10005270.HEALTHCARE.UMLS_STAGE AUTO_COMPRESS=TRUE;"
