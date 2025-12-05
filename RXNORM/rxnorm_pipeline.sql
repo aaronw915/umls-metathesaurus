@@ -1,0 +1,140 @@
+CREATE OR REPLACE TABLE IOP_10005270.HEALTHCARE.RXNATOMARCHIVE
+(
+   RXAUI             VARCHAR,
+   AUI               VARCHAR,
+   STR               VARCHAR,
+   ARCHIVE_TIMESTAMP VARCHAR,
+   CREATED_TIMESTAMP VARCHAR,
+   UPDATED_TIMESTAMP VARCHAR,
+   CODE              VARCHAR,
+   IS_BRAND          VARCHAR,
+   LAT               VARCHAR,
+   LAST_RELEASED     VARCHAR,
+   SAUI              VARCHAR,
+   VSAB              VARCHAR,
+   RXCUI             VARCHAR,
+   SAB               VARCHAR,
+   TTY               VARCHAR,
+   MERGED_TO_RXCUI   VARCHAR
+);
+
+/*
+CREATE OR REPLACE TABLE IOP_10005270.HEALTHCARE.RXNCONSO
+(
+   RXCUI             VARCHAR,
+   LAT               VARCHAR,
+   TS                VARCHAR,
+   LUI               VARCHAR,
+   STT               VARCHAR,
+   SUI               VARCHAR,
+   ISPREF            VARCHAR,
+   RXAUI             VARCHAR,
+   SAUI              VARCHAR,
+   SCUI              VARCHAR,
+   SDUI              VARCHAR,
+   SAB               VARCHAR,
+   TTY               VARCHAR,
+   CODE              VARCHAR,
+   STR               VARCHAR,
+   SRL               VARCHAR,
+   SUPPRESS          VARCHAR,
+   CVF               VARCHAR
+);
+*/
+
+CREATE OR REPLACE TABLE IOP_10005270.HEALTHCARE.RXNREL
+(
+   RXCUI1    VARCHAR,
+   RXAUI1    VARCHAR,
+   STYPE1    VARCHAR,
+   REL       VARCHAR,
+   RXCUI2    VARCHAR,
+   RXAUI2    VARCHAR,
+   STYPE2    VARCHAR,
+   RELA      VARCHAR,
+   RUI       VARCHAR,
+   SRUI      VARCHAR,
+   SAB       VARCHAR,
+   SL        VARCHAR,
+   DIR       VARCHAR,
+   RG        VARCHAR,
+   SUPPRESS  VARCHAR,
+   CVF       VARCHAR
+);
+
+CREATE OR REPLACE TABLE IOP_10005270.HEALTHCARE.RXNSAB
+(
+   VCUI           VARCHAR,
+   RCUI           VARCHAR,
+   VSAB           VARCHAR,
+   RSAB           VARCHAR,
+   SON            VARCHAR,
+   SF             VARCHAR,
+   SVER           VARCHAR,
+   VSTART         VARCHAR,
+   VEND           VARCHAR,
+   IMETA          VARCHAR,
+   RMETA          VARCHAR,
+   SLC            VARCHAR,
+   SCC            VARCHAR,
+   SRL            VARCHAR,
+   TFR            VARCHAR,
+   CFR            VARCHAR,
+   CXTY           VARCHAR,
+   TTYL           VARCHAR,
+   ATNL           VARCHAR,
+   LAT            VARCHAR,
+   CENC           VARCHAR,
+   CURVER         VARCHAR,
+   SABIN          VARCHAR,
+   SSN            VARCHAR,
+   SCIT           VARCHAR
+);
+
+/*
+CREATE OR REPLACE TABLE IOP_10005270.HEALTHCARE.RXNSAT
+(
+   RXCUI            VARCHAR,
+   LUI              VARCHAR,
+   SUI              VARCHAR,
+   RXAUI            VARCHAR,
+   STYPE            VARCHAR,
+   CODE             VARCHAR,
+   ATUI             VARCHAR,
+   SATUI            VARCHAR,
+   ATN              VARCHAR,
+   SAB              VARCHAR,
+   ATV              VARCHAR,
+   SUPPRESS         VARCHAR,
+   CVF              VARCHAR
+);
+ */
+
+
+CREATE OR REPLACE TABLE IOP_10005270.HEALTHCARE.RXNSTY
+(
+   RXCUI          VARCHAR,
+   TUI            VARCHAR,
+   STN            VARCHAR,
+   STY            VARCHAR,
+   ATUI           VARCHAR,
+   CVF            VARCHAR
+);
+
+CREATE OR REPLACE TABLE IOP_10005270.HEALTHCARE.RXNDOC
+(
+    DOCKEY      VARCHAR,
+    VALUE       VARCHAR,
+    TYPE        VARCHAR,
+    EXPL        VARCHAR
+);
+
+
+CREATE OR REPLACE TABLE IOP_10005270.HEALTHCARE.RXNCUI
+(
+ cui1        VARCHAR,
+ ver_start   VARCHAR,
+ ver_end     VARCHAR,
+ cardinality VARCHAR,
+ cui2        VARCHAR
+);
