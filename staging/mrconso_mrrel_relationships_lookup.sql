@@ -24,20 +24,17 @@ CREATE OR REPLACE TABLE TEMP_MRCONSO_MRREL_RELATIONSHIPS_LOOKUP as WITH
         FROM
             mrrel a
             JOIN mrconso b ON a.cui2 = b.cui
-            JOIN TEMP_MRCONSO_MRREL_RELATIONSHIPS_LOOKUP L 
+            JOIN temp_mrconso_mrrel_relationships_weights L 
             ON A.SAB = L.SAB
             AND B.SAB = L.SAB 
             AND B.TTY = L.TTY
             JOIN mrconso c 
             ON a.cui1 = c.cui
             AND a.sab = c.sab
-        WHERE
-            a.cui2 = 'C4535015'
-            AND a.rela IS NOT NULL
+        WHERE a.rela IS NOT NULL
     )
 SELECT
     *
 FROM
     concept
     WHERE RN=1;
-
